@@ -1,14 +1,6 @@
-// Contador de apoio à inovação no agronegócio
-let apoios = 0;
+// Desafio 3: Lógica para alternar o modo escuro manualmente
+const themeToggleBtn = document.getElementById('theme-toggle');
 
-const botaoApoiar = document.getElementById('btn-curtir');
-const contador = document.getElementById('contador-curtidas');
-
-botaoApoiar.addEventListener('click', () => {
-  apoios++;
-  if (apoios === 1) {
-    contador.textContent = '1 apoio';
-  } else {
-    contador.textContent = `${apoios} apoios`;
-  }
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });
