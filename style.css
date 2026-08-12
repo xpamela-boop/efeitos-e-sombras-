@@ -1,0 +1,61 @@
+/* Configurações gerais da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container do post */
+.container {
+  max-width: 650px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Imagem proporcional e acessível */
+.post-image {
+  max-width: 100%;    /* Garante que nunca ultrapasse a largura do container */
+  height: auto;       /* Mantém a proporção correta de altura/largura */
+  border-radius: 8px; /* Cantos arredondados */
+  margin: 20px 0;     /* Espaçamento para não colar no texto */
+  display: block;
+}
+
+/* Botão de interação */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#contador-curtidas {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #7f8c8d;
+}
