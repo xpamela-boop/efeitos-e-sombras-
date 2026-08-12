@@ -1,63 +1,34 @@
-/* Configurações gerais da página */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f1f8e9; /* Tom suave de verde/terra */
-  color: #2e3d29;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Container do post */
-.container {
-  max-width: 650px;
+/* Estilo base do cartão */
+article {
   background-color: #ffffff;
-  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
-  border-top: 6px solid #2e7d32; /* Detalhe em verde agro */
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Transição suave para scale e box-shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1 {
-  color: #1b5e20;
-  margin-bottom: 15px;
+/* Efeito de Hover no Modo Claro */
+article:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-p {
-  line-height: 1.6;
-  font-size: 1.05rem;
-  color: #424242;
-}
+/* Suporte ao Modo Escuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121214;
+    color: #e1e1e6;
+  }
 
-/* Imagem proporcional, responsiva e acessível */
-.post-image {
-  max-width: 100%;    /* Impede que a imagem ultrapasse o container */
-  height: auto;       /* Mantém a proporção perfeita */
-  border-radius: 8px; /* Cantos levemente arredondados */
-  margin: 20px 0;     /* Espaçamento vertical */
-  display: block;
-}
+  article {
+    background-color: #202024;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  }
 
-/* Botão de interação com identidade Agro */
-button {
-  background-color: #2e7d32;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background-color: #1b5e20;
-}
-
-#contador-curtidas {
-  margin-left: 10px;
-  font-weight: bold;
-  color: #558b2f;
+  /* Efeito de Hover no Modo Escuro (sombra azul neon suave) */
+  article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 22px rgba(82, 168, 236, 0.4);
+  }
 }
