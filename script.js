@@ -1,14 +1,14 @@
-// Funcionalidade simples de curtidas para o post
-let curtidas = 0;
+// Contador de apoio à inovação no agronegócio
+let apoios = 0;
 
-const botaoCurtir = document.getElementById('btn-curtir');
+const botaoApoiar = document.getElementById('btn-curtir');
 const contador = document.getElementById('contador-curtidas');
 
-botaoCurtir.addEventListener('click', () => {
-  curtidas++;
-  if (curtidas === 1) {
-    contador.textContent = '1 curtida';
+botaoApoiar.addEventListener('click', () => {
+  apoios++;
+  if (apoios === 1) {
+    contador.textContent = '1 apoio';
   } else {
-    contador.textContent = `${curtidas} curtidas`;
+    contador.textContent = `${apoios} apoios`;
   }
 });
