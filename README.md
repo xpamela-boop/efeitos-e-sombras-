@@ -1,14 +1,14 @@
-# efeitos-e-sombras-# 🚀 Desafio: Imagem Acessível no Post
+# 🌾 Desafio Agrotech: Imagem Acessível no Post
 
-Este projeto foi desenvolvido para demonstrar o uso de imagens de forma proporcional, elegante e acessível em um post web.
+Projeto focado no setor de agronegócio e tecnologia no campo (Agrotech), desenvolvido para demonstrar boas práticas de acessibilidade e responsividade em páginas web.
 
-## 🎯 Objetivos do Desafio
-- [x] Inserir uma imagem relacionada ao conteúdo do post.
-- [x] Ajustar o tamanho com CSS (`max-width: 100%`) para manter a proporção.
-- [x] Escrever uma tag `alt` clara e descritiva para leitores de tela.
-- [x] Garantir que a imagem complemente a mensagem sem gerar ruído visual.
+## 🎯 Objetivos Concluídos
+- [x] Inserção de imagem temática sobre inovação no agronegócio.
+- [x] Ajuste de proporção via CSS (`max-width: 100%` e `height: auto`).
+- [x] Descrição detalhada via atributo `alt` garantindo acessibilidade para leitores de tela.
+- [x] Design visual alinhado ao tema agrícola e sustentável.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 - HTML5
 - CSS3
 - JavaScript
